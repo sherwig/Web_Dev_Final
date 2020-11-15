@@ -1,5 +1,6 @@
 // Form.js
 import React from 'react';
+import Graphics from './Graphics.js'
 import DatePicker from "react-datepicker";
 // import React, { useState } from "react";
 
@@ -18,10 +19,9 @@ class Form extends React.Component{
     //binding is necessary for 'this' to work in the callback
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-
     this.handleSignChange = this.handleSignChange.bind(this);
 
-    };
+  };
 // const [] = useState(new );
 
   handleChange(event) {
@@ -35,6 +35,7 @@ handleSignChange(event) {
 
 handleSubmit(event) {
   //In here set all of the values of the form.
+  // this.state.value='';
 
   // {console.log(this.state.todo)}
   // this.handleVoteChange();
@@ -57,10 +58,9 @@ render(){
             Enter Something:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
-          <input type="submit" value="Submit" />
 
           <label>
-          Pick your favorite flavor:
+          Pick your Star Sign:
           <select value={this.state.sign} onChange={this.handleSignChange}>
             <option value="Capricorn">Capricorn</option>
             <option value="Aries">Aries</option>
@@ -68,9 +68,13 @@ render(){
             <option value="mango">Mango</option>
           </select>
         </label>
-
+        <input type="submit" value="Submit" />
         </form>
         </div>
+
+        <div>
+        <Graphics answer={this.textValue} starSign={this.sign} submit={this.handleSubmit}/>
+       </div>
       </div>
 
     );
