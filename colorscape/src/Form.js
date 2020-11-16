@@ -36,6 +36,8 @@ handleSignChange(event) {
 handleSubmit(event) {
   //In here set all of the values of the form.
   // this.state.value='';
+  // this.setState({sign: event.target.sign});
+  // this.setState({value: event.target.value});
 
   // {console.log(this.state.todo)}
   // this.handleVoteChange();
@@ -69,12 +71,15 @@ render(){
           </select>
         </label>
         <input type="submit" value="Submit" />
+
+        <div>
+        <Graphics answer={this.state.textValue} starSign={this.state.sign} submit={this.handleSubmit}/>
+        </div>
+
         </form>
         </div>
 
-        <div>
-        <Graphics answer={this.textValue} starSign={this.sign} submit={this.handleSubmit}/>
-       </div>
+
       </div>
 
     );

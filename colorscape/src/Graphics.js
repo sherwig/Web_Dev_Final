@@ -14,10 +14,14 @@ class Graphics extends React.Component{
     }
   };
 
+
+
 y = 0;
 direction = '^';
 
   render(){
+    {console.log(this.props.starSign)}
+    // {console.log(this.props.answer)}
     return(
       <div>
       <Sketch
