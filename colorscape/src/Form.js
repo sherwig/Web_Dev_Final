@@ -1,8 +1,12 @@
 // Form.js
 import React from 'react';
 import Graphics from './Graphics.js'
-import DatePicker from "react-datepicker";
+// import DatePicker from "react-datepicker";
+import {SketchPicker} from 'react-color';
 // import React, { useState } from "react";
+
+
+// Run npm install react-color --save
 
 class Form extends React.Component{
     constructor(props){
@@ -11,27 +15,42 @@ class Form extends React.Component{
         birthday: '',
         textValue: '',
         sign: 'scorpio',
-        todo:
-        [
-        ]
+        favoriteColor: '',
+        background: '#fff'
         // Date(startDate, setStartDate);
     }
     //binding is necessary for 'this' to work in the callback
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleSignChange = this.handleSignChange.bind(this);
+    this.handleColorChange = this.handleColorChange.bind(this);
+    this.handleBgChange = this.handleBgChange.bind(this);
+    this.handleChangeComplete = this.handleChangeComplete.bind(this);
 
   };
 // const [] = useState(new );
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({textValue: event.target.value});
     // { console.log(this.state.value) }
 }
 
 handleSignChange(event) {
-   this.setState({sign: event.target.sign});
+   this.setState({sign: event.target.value});
  }
+
+ handleColorChange(event) {
+    this.setState({favoriteColor: event.target.value});
+  }
+
+  handleBgChange(color, event) {
+    this.setState({ background: color.hex });
+}
+
+  handleChangeComplete = (color) => {
+    this.setState({ background: color.hex });
+    // {console.log(this.state.background)}
+  };
 
 handleSubmit(event) {
   //In here set all of the values of the form.
@@ -50,36 +69,39 @@ render(){
       marginTop: "5%",
       marginLeft: "20%"
     }
-    // <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
-
+    // <SketchPicker selected={startDate} onChange={date => setStartDate(date)} />
+      //
     return(
       <div>
         <div style={submitStyle}>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Enter Something:
+            Enter Your Name:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
 
+          <label>
+            Enter Your Favorite Color:
+          <input type="text" value={this.state.value} onChange={this.handleColorChange} />
+          </label>
+
+          <SketchPicker color={ this.state.background } onChangeComplete={ this.handleChangeComplete }/>
           <label>
           Pick your Star Sign:
           <select value={this.state.sign} onChange={this.handleSignChange}>
             <option value="Capricorn">Capricorn</option>
             <option value="Aries">Aries</option>
             <option value="Libra">Libra</option>
-            <option value="mango">Mango</option>
+            <option value="Scorpio">Scorpio</option>
           </select>
         </label>
         <input type="submit" value="Submit" />
-
-        <div>
-        <Graphics answer={this.state.textValue} starSign={this.state.sign} submit={this.handleSubmit}/>
-        </div>
-
         </form>
         </div>
 
-
+        <div>
+        <Graphics answer={this.state.textValue} color={this.state.favoriteColor} starSign={this.state.sign} bgColor= {this.state.background} submit={this.handleSubmit}/>
+        </div>
       </div>
 
     );
