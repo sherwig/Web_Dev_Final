@@ -32,7 +32,7 @@ class Graphics extends React.Component{
 
 			p.background(this.props.bgColor);
 			p.fill(255);
-      p.rect(i,i,50,50);
+      p.rect(x,y,50,50);
 
 		}
 	}
