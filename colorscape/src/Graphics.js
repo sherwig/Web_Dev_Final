@@ -3,7 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import p5 from 'p5';
-// import Sketch from 'react-p5';
+import Sketch from 'react-p5';
 
 // https://codesandbox.io/s/k09k8knxz5?file=/src/index.js:61-92
 class Graphics extends React.Component{
@@ -20,22 +20,25 @@ class Graphics extends React.Component{
 // basic setup for p5, can be used to greater extents once we have the form done
 	Sketch = (p) => {
 
-		let x = 100;
-		let y = 100;
+		let x = 400;
+		let y = 400;
+    {console.log("here")}
 
 		p.setup = () => {
-			p.createCanvas(200, 200);
+			p.createCanvas(800, 800);
 		}
 
 		p.draw = () => {
+
 			p.background(this.props.bgColor);
 			p.fill(255);
-			p.rect(x,y,50,50);
+      p.rect(i,i,50,50);
+
 		}
 	}
 
 	componentDidMount(){
-		this.myP5 = new p5(this.p, this.myRef.current);
+		this.myP5 = new p5(this.Sketch, this.myRef.current);
 	}
 
 	// code snippet (mostly) via: https://dev.to/christiankastner/integrating-p5-js-with-react-i0d

@@ -43,6 +43,7 @@ handleSignChange(event) {
     this.setState({favoriteColor: event.target.value});
   }
 
+// https://casesandberg.github.io/react-color/
   handleBgChange(color, event) {
     this.setState({ background: color.hex });
 }
@@ -63,6 +64,9 @@ handleSubmit(event) {
   // this.setState({counter: this.state.counter+1});
   event.preventDefault();
 }
+
+
+
 render(){
     var submitStyle={
       color: "#333",
@@ -73,31 +77,33 @@ render(){
       //
     return(
       <div>
-        <div style={submitStyle}>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Enter Your Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
 
-          <label>
-            Enter Your Favorite Color:
-          <input type="text" value={this.state.value} onChange={this.handleColorChange} />
-          </label>
-
-          <SketchPicker color={ this.state.background } onChangeComplete={ this.handleChangeComplete }/>
-          <label>
-          Pick your Star Sign:
-          <select value={this.state.sign} onChange={this.handleSignChange}>
-            <option value="Capricorn">Capricorn</option>
-            <option value="Aries">Aries</option>
-            <option value="Libra">Libra</option>
-            <option value="Scorpio">Scorpio</option>
-          </select>
+      <div style={submitStyle}>
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Enter Your Name:
+        <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="Submit" />
-        </form>
-        </div>
+
+        <label>
+          Enter Your Favorite Color:
+        <input type="text" value={this.state.value} onChange={this.handleColorChange} />
+        </label>
+
+        <SketchPicker color={ this.state.background } onChangeComplete={ this.handleChangeComplete }/>
+        <label>
+        Pick your Star Sign:
+        <select value={this.state.sign} onChange={this.handleSignChange}>
+          <option value="Capricorn">Capricorn</option>
+          <option value="Aries">Aries</option>
+          <option value="Libra">Libra</option>
+          <option value="Scorpio">Scorpio</option>
+        </select>
+      </label>
+      <input type="submit" value="Submit" />
+      </form>
+      </div>
+
 
         <div>
         <Graphics answer={this.state.textValue} color={this.state.favoriteColor} starSign={this.state.sign} bgColor= {this.state.background} submit={this.handleSubmit}/>
