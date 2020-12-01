@@ -21,35 +21,101 @@ class Graphics extends React.Component{
 	Sketch = (p) => {
 		var a = 0
     let b=0;
-    var changer=0;
-		let x = 400;
-		let y = 400;
+    let changer=0;
+		let x = 50;
+		let y = 50;
+    let starSign;
     {console.log("here")}
 
 		p.setup = () => {
 			p.createCanvas(800, 800);
+      p.rectMode(p.CENTER);
+
 		}
 
 		p.draw = () => {
 
     var name=this.props.answer;
-    {console.log(name.length)}
-
     b=p.map(name.length,0, 30, 0.001, 0.1);
 
-    {console.log(b)}
+    starSign=this.props.starSign;
+
+    if (starSign==="Scorpio")
+    {
+      {console.log(starSign)}
+      // p.fill(0);
+      p.rect(x+50,y+50,50,50);
+    }
+
+    else if (starSign=="Capricorn")
+    {
+      {console.log(starSign)}
+      p.rect(x+50,y+50,50,50);
+
+    }
+
+    else if (starSign=="Aries")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Libra")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Gemini")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Pisces")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Taurus")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Virgo")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Aquarius")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Sagittarius")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Cancer")
+    {
+      {console.log(starSign)}
+    }
+
+    else if (starSign=="Aquarius")
+    {
+      {console.log(starSign)}
+    }
 
 		p.background(this.props.bgColor);
-		p.fill(255);
 
-    // p.rectMode(CENTER);
-    p.push();
-  	p.translate(50, 50);
+    p.fill(255);
+    // p.push();
+    p.translate(p.width/2,p.height/2);
     p.rotate(a / 3.0);
+    p.rect(0,0,50,50);
     p.rect(x,y,50,50);
-    p.rect(x+200,y+200,50,50);
-    p.rect(x+50,y+50,50,50);
-    p.pop();
+
+    // p.rect(x+200,y+200,50,50);
+    // p.rect(x+50,y+50,50,50);
+    // p.pop();
 //   p.rect(-26, -26, 52, 52);
     a = a + b
 
