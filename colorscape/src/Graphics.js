@@ -30,6 +30,9 @@ class Graphics extends React.Component{
 
 		p.draw = () => {
 
+    var name=this.props.answer;
+    // {console.log(name.length)}
+
 
 		p.background(this.props.bgColor);
 		p.fill(255);
@@ -55,7 +58,7 @@ class Graphics extends React.Component{
 	// code snippet (mostly) via: https://dev.to/christiankastner/integrating-p5-js-with-react-i0d
 
   render(){
-    {console.log(this.props.bgColor)}
+    // {console.log(this.props.bgColor)}
     // {console.log(this.props.answer)}
     return(
 			<div ref = {this.myRef}></div>
