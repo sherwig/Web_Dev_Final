@@ -85,10 +85,10 @@ render(){
         <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
 
-        <label>
+        {/* <label>
           Enter Your Favorite Color:
         <input type="text" value={this.state.value} onChange={this.handleColorChange} />
-        </label>
+        </label> */}
 
         <SketchPicker color={ this.state.background } onChangeComplete={ this.handleChangeComplete }/>
         <label>
@@ -98,6 +98,14 @@ render(){
           <option value="Aries">Aries</option>
           <option value="Libra">Libra</option>
           <option value="Scorpio">Scorpio</option>
+          <option value = "Gemini">Gemini</option>
+          <option value = "Pisces">Pisces</option>
+          <option value = "Taurus">Taurus</option>
+          <option value = "Virgo">Virgo</option>
+          <option value = "Aquarius">Aquarius</option>
+          <option value = "Sagittarius">Sagittarius</option>
+          <option value = "Cancer">Cancer</option>
+          <option value = "Aquarius">Aquarius</option>
         </select>
       </label>
       <input type="submit" value="Submit" />
