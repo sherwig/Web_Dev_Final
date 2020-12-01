@@ -34,7 +34,7 @@ class Graphics extends React.Component{
 			p.fill(255);
 	  
 	p.translate(50, 50);
-  p.rotate(a / 3.0);
+  p.rotate(a / 3.0); 
   p.rect(x,y,50,50);
   p.rect(x+200,y+200,50,50);
   p.rect(x+50,y+50,50,50);
