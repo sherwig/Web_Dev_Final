@@ -29,17 +29,22 @@ class Graphics extends React.Component{
 		}
 
 		p.draw = () => {
+      
 
-			p.background(this.props.bgColor);
-			p.fill(255);
-	  
-	p.translate(50, 50);
-  p.rotate(a / 3.0);
-  p.rect(x,y,50,50);
-  p.rect(x+200,y+200,50,50);
-  p.rect(x+50,y+50,50,50);
+		p.background(this.props.bgColor);
+		p.fill(255);
+
+    // p.rectMode(CENTER);
+    p.push();
+  	p.translate(50, 50);
+    p.rotate(a / 3.0);
+    p.rect(x,y,50,50);
+    p.rect(x+200,y+200,50,50);
+    p.rect(x+50,y+50,50,50);
+    p.pop();
+
 //   p.rect(-26, -26, 52, 52);
-  a = a + 0.01
+    a = a + 0.01
 
 		}
 	}
