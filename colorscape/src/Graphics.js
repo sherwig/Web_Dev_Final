@@ -40,11 +40,11 @@ class Graphics extends React.Component{
 
     starSign=this.props.starSign;
 
-    if (starSign==="Scorpio")
+    if (starSign=="Scorpio")
     {
       {console.log(starSign)}
-      // p.fill(0);
-      p.rect(x+50,y+50,50,50);
+      p.fill(0);
+      // p.rect(x+50,y+50,50,50);
     }
 
     else if (starSign=="Capricorn")
