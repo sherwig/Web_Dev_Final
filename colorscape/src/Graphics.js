@@ -20,6 +20,7 @@ class Graphics extends React.Component{
 // basic setup for p5, can be used to greater extents once we have the form done
 	Sketch = (p) => {
 		var a = 0
+    let b=0;
     var changer=0;
 		let x = 400;
 		let y = 400;
@@ -32,9 +33,11 @@ class Graphics extends React.Component{
 		p.draw = () => {
 
     var name=this.props.answer;
-    // {console.log(name.length)}
+    {console.log(name.length)}
 
-    let b=(name.length,0, 30, 0.001, 0.1);
+    b=p.map(name.length,0, 30, 0.001, 0.1);
+
+    {console.log(b)}
 
 		p.background(this.props.bgColor);
 		p.fill(255);
