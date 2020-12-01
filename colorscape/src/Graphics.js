@@ -29,7 +29,7 @@ class Graphics extends React.Component{
 		}
 
 		p.draw = () => {
-      
+
 
 		p.background(this.props.bgColor);
 		p.fill(255);
@@ -42,18 +42,6 @@ class Graphics extends React.Component{
     p.rect(x+200,y+200,50,50);
     p.rect(x+50,y+50,50,50);
     p.pop();
-
-<<<<<<< HEAD
-=======
-			p.background(this.props.bgColor);
-			p.fill(255);
-	  
-	p.translate(50, 50);
-  p.rotate(a / 3.0); 
-  p.rect(x,y,50,50);
-  p.rect(x+200,y+200,50,50);
-  p.rect(x+50,y+50,50,50);
->>>>>>> 77e25e21a589e33defc0a8bf466beb4cfffe136c
 //   p.rect(-26, -26, 52, 52);
     a = a + 0.01
 
