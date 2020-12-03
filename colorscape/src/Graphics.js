@@ -25,7 +25,7 @@ class Graphics extends React.Component{
 		let x = 50;
 		let y = 50;
     let starSign;
-    {console.log("here")}
+    // {console.log("here")}
 
 		p.setup = () => {
 			p.createCanvas(800, 800);
@@ -40,69 +40,69 @@ class Graphics extends React.Component{
 
     starSign=this.props.starSign;
 
-    if (starSign=="Scorpio")
+    if (this.props.starSign=="Scorpio")
     {
       {console.log(starSign)}
       p.fill(0);
-      // p.rect(x+50,y+50,50,50);
-    }
-
-    else if (starSign=="Capricorn")
-    {
-      {console.log(starSign)}
       p.rect(x+50,y+50,50,50);
-
     }
 
-    else if (starSign=="Aries")
-    {
-      {console.log(starSign)}
-    }
+    // p.elif (starSign=="Capricorn")
+    // {
+    //   {console.log(starSign)}
+    //   p.rect(x+50,y+50,50,50);
+    //
+    // }
 
-    else if (starSign=="Libra")
-    {
-      {console.log(starSign)}
-    }
-
-    else if (starSign=="Gemini")
-    {
-      {console.log(starSign)}
-    }
-
-    else if (starSign=="Pisces")
-    {
-      {console.log(starSign)}
-    }
-
-    else if (starSign=="Taurus")
-    {
-      {console.log(starSign)}
-    }
-
-    else if (starSign=="Virgo")
-    {
-      {console.log(starSign)}
-    }
-
-    else if (starSign=="Aquarius")
-    {
-      {console.log(starSign)}
-    }
-
-    else if (starSign=="Sagittarius")
-    {
-      {console.log(starSign)}
-    }
-
-    else if (starSign=="Cancer")
-    {
-      {console.log(starSign)}
-    }
-
-    else if (starSign=="Aquarius")
-    {
-      {console.log(starSign)}
-    }
+    // p.else if (starSign=="Aries")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Libra")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Gemini")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Pisces")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Taurus")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Virgo")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Aquarius")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Sagittarius")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Cancer")
+    // {
+    //   {console.log(starSign)}
+    // }
+    //
+    // p.else if (starSign=="Aquarius")
+    // {
+    //   {console.log(starSign)}
+    // }
 
 		p.background(this.props.bgColor);
 
@@ -127,10 +127,11 @@ class Graphics extends React.Component{
 	}
 
 	// code snippet (mostly) via: https://dev.to/christiankastner/integrating-p5-js-with-react-i0d
-
   render(){
     // {console.log(this.props.bgColor)}
     // {console.log(this.props.answer)}
+    {console.log(this.props.starSign)}
+
     return(
 			<div ref = {this.myRef}></div>
 
