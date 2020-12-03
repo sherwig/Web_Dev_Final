@@ -74,7 +74,13 @@ render(){
       marginLeft: "20%"
     }
     // <SketchPicker selected={startDate} onChange={date => setStartDate(date)} />
-      //
+
+    /* <label>
+      Enter Your Favorite Color:
+      <input type="text" value={this.state.value} onChange={this.handleColorChange} />
+      </label> */
+
+          /*<input type="submit" value="Submit" />*/
     return(
       <div>
 
@@ -85,10 +91,6 @@ render(){
         <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
 
-        {/* <label>
-          Enter Your Favorite Color:
-        <input type="text" value={this.state.value} onChange={this.handleColorChange} />
-        </label> */}
 
         <SketchPicker color={ this.state.background } onChangeComplete={ this.handleChangeComplete }/>
         <label>
@@ -108,7 +110,7 @@ render(){
           <option value = "Aquarius">Aquarius</option>
         </select>
       </label>
-      <input type="submit" value="Submit" />
+
       </form>
       </div>
 

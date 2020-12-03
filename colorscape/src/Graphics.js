@@ -44,6 +44,7 @@ class Graphics extends React.Component{
     p.fill(255);
     p.translate(p.width/2,p.height/2);
     p.rotate(a / 3.0);
+    a = a + b
     p.rect(0,0,50,50);
     p.rect(x,y,50,50);
 
@@ -64,6 +65,7 @@ class Graphics extends React.Component{
     else if (starSign=="Aries")
     {
       {console.log(starSign)}
+      p.ellipse(x+50,y+50,50);
     }
 
     else if (starSign=="Libra")
@@ -110,8 +112,6 @@ class Graphics extends React.Component{
     {
       {console.log(starSign)}
     }
-
-    a = a + b
 
 		}
 	}
