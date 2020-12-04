@@ -80,7 +80,7 @@ render(){
       <input type="text" value={this.state.value} onChange={this.handleColorChange} />
       </label> */
 
-          /*<input type="submit" value="Submit" />*/
+    /*<input type="submit" value="Submit" />*/
     return(
       <div>
 
