@@ -68,9 +68,9 @@ class Graphics extends React.Component {
       }
 
 
-      // p.translate(p.width / 2, p.height / 2);
+
       // changer+=.01;
-      // p.push();
+
       // p.strokeWeight(0);
       // p.fill(255,127+p.sin(changer*255));
       // {console.log(255*p.abs(p.sin(changer+255)))}
@@ -78,13 +78,14 @@ class Graphics extends React.Component {
       // p.ellipse(-100,-100,10);
       // p.pop();
 
-
+      p.push();
+      p.translate(p.width / 2, p.height / 2);
       p.fill(255);
-
       p.rotate(a / 3.0);
       a = a + b
-      p.rect(0, 0, 50, 50);
-      p.rect(x, y, 50, 50);
+      p.pop();
+      // p.rect(0, 0, 50, 50);
+      // p.rect(x, y, 50, 50);
 
 
 
@@ -104,11 +105,29 @@ class Graphics extends React.Component {
       else if (starSign == "Aries") {
         { console.log(starSign) }
         // p.ellipse(x+50,y+50,50);
-        p.rect(100, 150, 30, 30);
-        p.rect(500, 80, 30, 30);
-        p.rect(670, 500, 30, 30);
-        p.rect(680, 590, 30, 30);
-        p.rect(620, 660, 30, 30); 
+        p.push();
+        p.translate(p.width / 2, p.height / 2);
+        p.rotate(a / 3.0);
+        a = a + b;
+        p.stroke(255);
+        p.rect(-200, -150, 20, 20);
+        p.line(-200, -150,-60, -80);
+        p.rect(-60, -80, 20, 20);
+
+        p.line(-60, -80,0, 0);
+
+        p.rect(0, 0, 20, 20);
+        p.line(0, 0,20, 70);
+        p.rect(20, 70, 20, 20);
+        // p.rect(620, 660, 30, 30);
+        p.pop();
+
+        // p.rect(100, 150, 30, 30);
+        // p.rect(500, 80, 30, 30);
+        // p.rect(670, 500, 30, 30);
+        // p.rect(680, 590, 30, 30);
+        // p.rect(620, 660, 30, 30);
+
       }
 
       else if (starSign == "Libra") {

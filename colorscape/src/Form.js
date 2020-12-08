@@ -14,7 +14,7 @@ class Form extends React.Component{
     this.state={
         birthday: '',
         textValue: '',
-        sign: 'scorpio',
+        sign: '',
         favoriteColor: '',
         background: '#fff'
         // Date(startDate, setStartDate);
