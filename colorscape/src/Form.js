@@ -83,7 +83,7 @@ render(){
     /*<input type="submit" value="Submit" />*/
     return(
       <div>
-
+        <h1 class = "title"> COLORSCAPE </h1>
       <div style={submitStyle}>
       <form onSubmit={this.handleSubmit}>
         <label>
