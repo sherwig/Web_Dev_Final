@@ -92,14 +92,16 @@ class Graphics extends React.Component {
 
       if (this.props.starSign == "Scorpio") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
         p.fill(0);
         p.rect(x + 50, y + 50, 50, 50);
       }
 
       else if (starSign == "Capricorn") {
         { console.log(starSign) }
-        p.rect(x + 50, y + 50, 50, 50);
-
+        // p.rect(x + 50, y + 50, 50, 50);
+        p.translate(p.width / 2, p.height / 2);
+        
       }
 
       else if (starSign == "Aries") {
@@ -119,7 +121,8 @@ class Graphics extends React.Component {
         p.rect(0, 0, 20, 20);
         p.line(0, 0,20, 70);
         p.rect(20, 70, 20, 20);
-        // p.rect(620, 660, 30, 30);
+        p.line(40, 70, 10, 130);
+        p.rect(10, 130, 20, 20)
         p.pop();
 
         // p.rect(100, 150, 30, 30);
@@ -132,38 +135,72 @@ class Graphics extends React.Component {
 
       else if (starSign == "Libra") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
       else if (starSign == "Gemini") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
       else if (starSign == "Pisces") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
       else if (starSign == "Taurus") {
         { console.log(starSign) }
+        p.push(); 
+        p.translate(p.width / 2, p.height / 2);
+        p.rotate(a / 3.0);
+        a = a + b;
+        p.stroke(255); 
+        p.rect(-300, -120, 20, 20); //0
+        p.line(-300, -120, 10, 10); //line
+        p.rect(-80, -200, 20, 20); //1
+        p.line(-80, -200, 30, -40); //line
+        p.rect(10, 10, 20, 20); //0
+        p.line(10, 10, 40, 40); //line
+        p.rect(30, -40, 20,20); //1
+        p.line(10, 10, 40, 40); //line 
+        p.rect(40, 40, 20, 20); //0
+        p.line(30, -40, 70, 10); //line
+        p.rect(70, 10, 20,20);  //1
+        p.rect(90, 50, 20, 20); 
+        p.line(40, 40, 100, 60); 
+        p.line(70, 10, 90, 50);
+        p.rect(150, 150, 20, 20); 
+        p.line(90, 50, 150, 150); 
+        p.rect(300, 250, 20, 20);
+        p.line(150, 150, 300,250); 
+        p.rect(280, 300, 20, 20);
+        p.line(310, 250, 290, 300);    
+        p.pop(); 
       }
 
       else if (starSign == "Virgo") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
       else if (starSign == "Aquarius") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
       else if (starSign == "Sagittarius") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
       else if (starSign == "Cancer") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
       else if (starSign == "Aquarius") {
         { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
     }
