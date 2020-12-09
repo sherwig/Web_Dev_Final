@@ -140,7 +140,32 @@ class Graphics extends React.Component {
 
       else if (starSign == "Gemini") {
         { console.log(starSign) }
+        p.push();
         p.translate(p.width / 2, p.height / 2);
+        p.rotate(a / 3.0);
+        a = a + b;
+        p.stroke(255); 
+        p.rect(-50, -250, 20, 20); 
+        p.rect(-150, -150, 20, 20); 
+        p.line(-150, -150, -120, -70); 
+        p.line(-50, -240, -150, -140); 
+        p.rect(-120, -70, 20, 20);
+        p.rect(100, 50, 20, 20);  
+        p.line(-120, -70, 100, 50); 
+        p.rect(70, 120, 20, 20);
+        p.line(110, 60, 80, 120); 
+        p.rect(170, 50, 20, 20);
+        p.line(110, 60, 180, 50);
+        p.rect(200, -50, 20, 20);
+        p.line(180, 50, 200, -30); 
+        p.rect(300, -70, 20, 20);
+        p.line(200, -30, 300, -55);
+        p.rect(30, -270, 20, 20);
+        p.rect(90, -150, 20, 20);
+        p.line(30, -270, 90, -150); 
+        p.line(-40, -250, 30, -270);
+        p.line(200, -50, 90, -150);  
+        p.pop(); 
       }
 
       else if (starSign == "Pisces") {
@@ -195,7 +220,21 @@ class Graphics extends React.Component {
 
       else if (starSign == "Cancer") {
         { console.log(starSign) }
+        p.push(); 
         p.translate(p.width / 2, p.height / 2);
+        p.rotate(a / 3.0);
+        a = a + b;
+        p.stroke(255); 
+        p.rect(0, -300, 20, 20);
+        p.rect(20, 0, 20, 20); 
+        p.rect(0, 100, 20, 20);  
+        p.rect(-100, 250, 20, 20); 
+        p.rect(250, 300, 20, 20);
+        p.line(10, -290, 30, 0) 
+        p.line(30, 0, 10, 100);
+        p.line(10, 100, -90, 250); 
+        p.line(10, 100, 250, 300); 
+        p.pop(); 
       }
 
       else if (starSign == "Aquarius") {
