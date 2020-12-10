@@ -144,7 +144,7 @@ class Graphics extends React.Component {
         { console.log(starSign) }
         // p.rect(x + 50, y + 50, 50, 50);
         // p.translate(p.width / 2, p.height / 2);
-        
+
 
       }
 
@@ -179,26 +179,7 @@ class Graphics extends React.Component {
 
       else if (starSign == "Libra") {
         { console.log(starSign) }
-        p.push();
         p.translate(p.width / 2, p.height / 2);
-        p.rotate(a / 3.0);
-        a = a + b;
-        p.stroke(255);
-        p.rect(-165, 0, 20, 20); 
-        p.rect(-10, -170, 20, 20); 
-        p.rect(190, 0, 20, 20); 
-        p.rect(70, 170, 20, 20); 
-        p.rect(-200, 320, 20, 20); 
-        p.rect(-170, 280, 20, 20); 
-        p.line(-165, 0, -10, -170);
-        p.line(-10, -170, 190, 0); 
-        p.line(190, 0, -165, 0); 
-        p.line(190, 0, 70, 170); 
-        p.line(-165, 0, -170, 280); 
-        p.line(-170, 280, -200, 320); 
-
-        p.pop()
-      
       }
 
       else if (starSign == "Gemini") {
@@ -310,7 +291,36 @@ class Graphics extends React.Component {
 
       else if (starSign == "Virgo") {
         { console.log(starSign) }
-        p.translate(p.width / 2, p.height / 2);
+        p.push()
+         p.translate(p.width / 2, p.height / 2);
+         p.rotate(a / 3.0);
+         a = a + b;
+         p.stroke(255);
+         p.rect(-80, -350, 20, 20);
+         p.rect(-150, -100, 20, 20);
+         p.rect(0, -80, 20, 20);
+         p.rect(20, 50, 20, 20);
+         p.rect(-170, 170, 20, 20);
+         p.rect(-5, 200, 20, 20);
+         p.rect(5, 350, 20, 20);
+         p.rect(170, 230, 20, 20);
+         p.rect(150, 50, 20, 20);
+         p.rect(100, -120, 20, 20);
+         p.rect(120, -180, 20, 20);
+         p.rect(110, -150, 20, 20);
+         p.line(-80, -350, -150, -100);
+         p.line(-150, -100, 0, -80);
+         p.line(0, -80, 20, 50);
+         p.line(20, 50, 150, 50);
+         p.line(20, 50, -5, 200);
+         p.line(-5, 200, -170, 170);
+         p.line(150, 50, 170, 230);
+         p.line(170, 230, 5, 350);
+         p.line(150, 50, 100, -120);
+         p.line(100, -120, 0, -80);
+         p.line(100, -120, 110, -150);
+         p.line(110, -150, 120, -180);
+         p.pop(); 
       }
 
       else if (starSign == "Aquarius") {
