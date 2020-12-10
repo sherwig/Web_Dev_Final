@@ -109,7 +109,7 @@ class Form extends React.Component {
                   <option value="Aquarius">Aquarius</option>
                   <option value="Sagittarius">Sagittarius</option>
                   <option value="Cancer">Cancer</option>
-                  <option value="Aquarius">Aquarius</option>
+                  <option value="Leo">Leo</option>
                 </select>
               </label>
 
