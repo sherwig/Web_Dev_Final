@@ -143,7 +143,8 @@ class Graphics extends React.Component {
       else if (starSign == "Capricorn") {
         { console.log(starSign) }
         // p.rect(x + 50, y + 50, 50, 50);
-        p.translate(p.width / 2, p.height / 2);
+        // p.translate(p.width / 2, p.height / 2);
+        
 
       }
 
@@ -295,33 +296,7 @@ class Graphics extends React.Component {
 
       else if (starSign == "Aquarius") {
         { console.log(starSign) }
-        p.push(); 
-        p.rotate(a / 3.0);
-        a = a + b;
-        p.stroke(255);
         p.translate(p.width / 2, p.height / 2);
-        p.rect(-200, 0, 20, 20);
-        p.rect(-20, -80, 20, 20);
-        p.rect(0, -50, 20, 20); 
-        p.rect(50, -70, 20, 20); 
-        p.rect(0, 30, 20, 20); 
-        p.rect(5, 90, 20, 20); 
-        p.rect(200, 0, 20, 20); 
-        p.rect(370, 20, 20, 20); 
-        p.rect(-160, 50, 20, 20); 
-        p.rect(-170, 10, 20, 20); 
-        p.rect(-190, 220, 20, 20); 
-        p.line(-20, -80, 0, -50); 
-        p.line(0, -50, 50, -70); 
-        p.line(50, -70, 200, 0); 
-        p.line(200, 0, 390, 20); 
-        p.line(50, -70, 0, 30); 
-        p.line(0, 30, 5, 90); 
-        p.line(-20, -80, -200, 0); 
-        p.line(-200, 0, -170, 10); 
-        p.line(-170, 10, -160, 50); 
-        p.line(-160, 50, -190, 220); 
-        p.pop();
       }
 
       else if (starSign == "Sagittarius") {
@@ -398,6 +373,11 @@ class Graphics extends React.Component {
         p.line(10, 100, -90, 250);
         p.line(10, 100, 250, 300);
         p.pop();
+      }
+
+      else if (starSign == "Aquarius") {
+        { console.log(starSign) }
+        p.translate(p.width / 2, p.height / 2);
       }
 
     }
