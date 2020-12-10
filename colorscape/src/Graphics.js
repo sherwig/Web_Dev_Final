@@ -25,6 +25,7 @@ class Graphics extends React.Component {
     let starSign;
     var stars = [];
     var size=15;
+    var size2=10;
     // {console.log("here")}
 
     p.setup = () => {
@@ -99,6 +100,7 @@ class Graphics extends React.Component {
         p.rotate(a / 3.0);
         a = a + b;
         p.stroke(255);
+        p.strokeWeight(1.8);
         p.rect(-400,100, 20, 20);
         p.line(-400,100,-450,80);
 
@@ -148,10 +150,11 @@ class Graphics extends React.Component {
 
         p.push();
         p.translate(p.width / 2, p.height / 2);
-        p.scale(1.4);
+        p.scale(1.55);
         p.rotate(a / 3.0);
         a = a + b;
         p.stroke(255);
+        p.strokeWeight(1.8);
         p.rect(-200,150, size, size);
         p.line(-200,150, -160,130);
         p.rect(-160,130, size, size);
@@ -209,6 +212,7 @@ class Graphics extends React.Component {
         p.rotate(a / 3.0);
         a = a + b;
         p.stroke(255);
+        p.strokeWeight(1.8);
         p.rect(-200, -150, 20, 20);
         p.line(-200, -150,-60, -80);
         p.rect(-60, -80, 20, 20);
@@ -238,6 +242,7 @@ class Graphics extends React.Component {
        p.rotate(a / 3.0);
        a = a + b;
        p.stroke(255);
+       p.strokeWeight(1.8);
        p.rect(-165, 0, 20, 20);
        p.rect(-10, -170, 20, 20);
        p.rect(190, 0, 20, 20);
@@ -263,6 +268,7 @@ class Graphics extends React.Component {
         p.rotate(a / 3.0);
         a = a + b;
         p.stroke(255);
+        p.strokeWeight(1.8);
         p.rect(-50, -250, 20, 20);
         p.rect(-150, -150, 20, 20);
         p.line(-150, -150, -120, -70);
@@ -292,42 +298,44 @@ class Graphics extends React.Component {
 
         p.push();
         p.translate(p.width / 2, p.height / 2);
+        p.scale(1.2);
         p.rotate(a / 3.0);
         a = a + b;
         p.stroke(255);
-        p.rect(-150,300, 15, 15); //0
+        p.strokeWeight(1.8);
+        p.rect(-150,300, size2, size2); //0
         p.line(-150,300, 100,260); //line
-        p.rect(100,260, 15, 15); //1
+        p.rect(100,260, size2, size2); //1
         p.line(100,260, 110,230); //line
-        p.rect(110,230, 15, 15); //0
+        p.rect(110,230, size2, size2); //0
         p.line(110,230, 80,180); //line
-        p.rect(80,180, 15,15); //1
+        p.rect(80,180, size2,size2); //1
         p.line(80,180, 50,130); //line
-        p.rect(50,130, 15, 15); //0
+        p.rect(50,130, size2, size2); //0
         p.line(50,130, 20,90); //line
-        p.rect(20,90, 15,15);  //1
+        p.rect(20,90, size2,size2);  //1
         p.line(20,90, -10,50);
-        p.rect(-10,50, 15, 15);
+        p.rect(-10,50, size2, size2);
         p.line(-10,50, -50,10);
-        p.rect(-50,10, 15, 15);
+        p.rect(-50,10, size2, size2);
         p.line(-50,10, 10,20);
-        p.rect(10,20, 15, 15);
+        p.rect(10,20, size2, size2);
         p.line(10,20, 60,30);
-        p.rect(60,30, 15, 15);
+        p.rect(60,30, size2, size2);
         p.line(60,30, 140,20);
-        p.rect(140,20, 15, 15);
+        p.rect(140,20, size2, size2);
         p.line(140,20, 170,30);
-        p.rect(170,30, 15, 15);
+        p.rect(170,30, size2, size2);
         p.line(170,30, 200,10);
-        p.rect(200,10, 15, 15);//Return back to here (200,10)
+        p.rect(200,10, size2, size2);//Return back to here (200,10)
         p.line(200,10, 220,20);
-        p.rect(220,20, 15, 15);
+        p.rect(220,20, size2, size2);
         p.line(220,20,240,-20);
-        p.rect(240,-20,15,15);
+        p.rect(240,-20,size2,size2);
         p.line(240,-20,220,-40);
-        p.rect(220,-40, 15, 15);
+        p.rect(220,-40, size2, size2);
         p.line(220,-40, 190,-40);
-        p.rect(190,-40, 15, 15);
+        p.rect(190,-40, size2, size2);
         p.line(190,-40, 200,10);
 
         p.pop();
@@ -340,6 +348,7 @@ class Graphics extends React.Component {
         p.rotate(a / 3.0);
         a = a + b;
         p.stroke(255);
+        p.strokeWeight(1.8);
         p.rect(-300, -120, 20, 20); //0
         p.line(-300, -120, 10, 10); //line
         p.rect(-80, -200, 20, 20); //1
@@ -370,6 +379,7 @@ class Graphics extends React.Component {
          p.rotate(a / 3.0);
          a = a + b;
          p.stroke(255);
+         p.strokeWeight(1.8);
          p.rect(-80, -350, 20, 20);
          p.rect(-150, -100, 20, 20);
          p.rect(0, -80, 20, 20);
@@ -405,6 +415,7 @@ class Graphics extends React.Component {
       p.rotate(a / 3.0);
       a = a + b;
       p.stroke(255);
+      p.strokeWeight(1.8);
       p.rect(-200, 0, 20, 20);
       p.rect(-20, -80, 20, 20);
       p.rect(0, -50, 20, 20);
@@ -439,6 +450,7 @@ class Graphics extends React.Component {
         p.scale(1.3);
         a = a + b;
         p.stroke(255);
+        p.strokeWeight(1.8);
         p.rect(250,250, 15, 15); //0
         p.line(250,250, 200,220); //line
         p.rect(200,220, 15, 15); //1
@@ -493,6 +505,7 @@ class Graphics extends React.Component {
         p.rotate(a / 3.0);
         a = a + b;
         p.stroke(255);
+        p.strokeWeight(1.8);
         p.rect(0, -300, 20, 20);
         p.rect(20, 0, 20, 20);
         p.rect(0, 100, 20, 20);
