@@ -69,6 +69,22 @@ class Graphics extends React.Component {
         stars[i].draw();
       }
 
+      if (this.props.bgColor=="#ffffff")
+      {
+          // {console.log(this.props.bgColor)}
+      }
+
+
+      if (this.props.bgColor=="#ffffff")
+      {
+          p.stroke(0);
+          p.fill(0);
+      }
+
+      else {
+        p.stroke(255);
+        p.fill(255);
+      }
 
 
       // changer+=.01;
@@ -82,7 +98,7 @@ class Graphics extends React.Component {
 
       p.push();
       p.translate(p.width / 2, p.height / 2);
-      p.fill(255);
+      // p.fill(255);
       p.rotate(a / 3.0);
       a = a + b
       p.pop();
@@ -99,7 +115,7 @@ class Graphics extends React.Component {
         p.scale(.55);
         p.rotate(a / 3.0);
         a = a + b;
-        p.stroke(255);
+        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(-400,100, 20, 20);
         p.line(-400,100,-450,80);
@@ -139,6 +155,7 @@ class Graphics extends React.Component {
 
         p.rect(320,420, 20, 20);
         p.line(200,440,320,420);
+
 
         p.pop();
       }
@@ -211,7 +228,7 @@ class Graphics extends React.Component {
         p.translate(p.width / 2, p.height / 2);
         p.rotate(a / 3.0);
         a = a + b;
-        p.stroke(255);
+        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(-200, -150, 20, 20);
         p.line(-200, -150,-60, -80);
@@ -241,7 +258,7 @@ class Graphics extends React.Component {
        p.translate(p.width / 2, p.height / 2);
        p.rotate(a / 3.0);
        a = a + b;
-       p.stroke(255);
+       // p.stroke(255);
        p.strokeWeight(1.8);
        p.rect(-165, 0, 20, 20);
        p.rect(-10, -170, 20, 20);
@@ -267,7 +284,7 @@ class Graphics extends React.Component {
         p.translate(p.width / 2, p.height / 2);
         p.rotate(a / 3.0);
         a = a + b;
-        p.stroke(255);
+        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(-50, -250, 20, 20);
         p.rect(-150, -150, 20, 20);
@@ -301,7 +318,7 @@ class Graphics extends React.Component {
         p.scale(1.2);
         p.rotate(a / 3.0);
         a = a + b;
-        p.stroke(255);
+        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(-150,300, size2, size2); //0
         p.line(-150,300, 100,260); //line
@@ -347,7 +364,7 @@ class Graphics extends React.Component {
         p.translate(p.width / 2, p.height / 2);
         p.rotate(a / 3.0);
         a = a + b;
-        p.stroke(255);
+        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(-300, -120, 20, 20); //0
         p.line(-300, -120, 10, 10); //line
@@ -378,7 +395,7 @@ class Graphics extends React.Component {
          p.translate(p.width / 2, p.height / 2);
          p.rotate(a / 3.0);
          a = a + b;
-         p.stroke(255);
+         // p.stroke(255);
          p.strokeWeight(1.8);
          p.rect(-80, -350, 20, 20);
          p.rect(-150, -100, 20, 20);
@@ -414,7 +431,7 @@ class Graphics extends React.Component {
       p.translate(p.width / 2, p.height / 2);
       p.rotate(a / 3.0);
       a = a + b;
-      p.stroke(255);
+      // p.stroke(255);
       p.strokeWeight(1.8);
       p.rect(-200, 0, 20, 20);
       p.rect(-20, -80, 20, 20);
@@ -449,7 +466,7 @@ class Graphics extends React.Component {
         p.rotate(a / 3.0);
         p.scale(1.3);
         a = a + b;
-        p.stroke(255);
+        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(250,250, 15, 15); //0
         p.line(250,250, 200,220); //line
@@ -504,7 +521,7 @@ class Graphics extends React.Component {
         p.translate(p.width / 2, p.height / 2);
         p.rotate(a / 3.0);
         a = a + b;
-        p.stroke(255);
+        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(0, -300, 20, 20);
         p.rect(20, 0, 20, 20);
@@ -528,7 +545,7 @@ class Graphics extends React.Component {
         p.strokeWeight(1.8);
         p.rotate(a / 3.0);
         a = a + b;
-        p.stroke(255);
+        // p.stroke(255);
         p.rect(200,200, size, size); //0
         p.line(200,200, 160,220); //line
         p.rect(160,220, size, size); //1
