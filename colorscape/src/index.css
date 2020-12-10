@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-    font-family: 'Nerko One', cursive;
+    font-family: 'Ranchers', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
+  background-color: #d5f2ee; 
 }
 
 code {
@@ -17,8 +18,16 @@ code {
 
 .title{
   text-align: center;
+  font-size: 3em; 
+  color: #00838c; 
 }
 .wrapper{
   display: flex; 
   flex-direction: row; 
+}
+
+.subtitle{
+  text-align: center; 
+  color: #00838c; 
+  font-size: 1em;
 }
