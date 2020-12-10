@@ -24,6 +24,7 @@ class Graphics extends React.Component {
     let y = 50;
     let starSign;
     var stars = [];
+    var size=15;
     // {console.log("here")}
 
     p.setup = () => {
@@ -144,6 +145,58 @@ class Graphics extends React.Component {
         { console.log(starSign) }
         // p.rect(x + 50, y + 50, 50, 50);
         // p.translate(p.width / 2, p.height / 2);
+
+        p.push();
+        p.translate(p.width / 2, p.height / 2);
+        p.scale(1.4);
+        p.rotate(a / 3.0);
+        a = a + b;
+        p.stroke(255);
+        p.rect(-200,150, size, size);
+        p.line(-200,150, -160,130);
+        p.rect(-160,130, size, size);
+        p.line(-160,130, -100,120);
+        p.rect(-100,120, size, size);
+        p.rect(-110,50, size, size);
+        p.line(-100,120,-110,50);
+        p.rect(-60,100, size, size);
+        p.line(-100,120,-60,100);
+        p.rect(-70,45, size, size);
+        p.line(-60,100,-70,45);
+        p.line(-60,100,-30,70);
+        p.rect(-30,70, size, size);
+        p.rect(-35,35, size, size);
+        p.line(-30,70,-35,35);
+        p.rect(60,80, size, size);
+        p.line(-60,100,60,80);
+        p.rect(65,100, size, size);
+        p.line(60,80,65,100);
+        p.rect(75,60, size, size);
+        p.line(60,80,75,60);
+        p.line(-30,70,75,60);
+        p.rect(60,0, size, size);
+        p.line(60,0,75,60);
+        p.rect(30,-30, size, size);
+        p.line(60,0,30,-30);
+
+
+
+        // p.rect(100, 50, 20, 20);
+        // p.line(-120, -70, 100, 50);
+        // p.rect(70, 120, 20, 20);
+        // p.line(110, 60, 80, 120);
+        // p.rect(170, 50, 20, 20);
+        // p.line(110, 60, 180, 50);
+        // p.rect(200, -50, 20, 20);
+        // p.line(180, 50, 200, -30);
+        // p.rect(300, -70, 20, 20);
+        // p.line(200, -30, 300, -55);
+        // p.rect(30, -270, 20, 20);
+        // p.rect(90, -150, 20, 20);
+        // p.line(30, -270, 90, -150);
+        // p.line(-40, -250, 30, -270);
+        // p.line(200, -50, 90, -150);
+        p.pop();
 
 
       }
@@ -452,10 +505,10 @@ class Graphics extends React.Component {
         p.pop();
       }
 
-      else if (starSign == "Aquarius") {
-        { console.log(starSign) }
-        p.translate(p.width / 2, p.height / 2);
-      }
+      // else if (starSign == "Aquarius") {
+      //   { console.log(starSign) }
+      //   p.translate(p.width / 2, p.height / 2);
+      // }
 
     }
   }
