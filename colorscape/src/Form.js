@@ -84,6 +84,7 @@ class Form extends React.Component {
     return (
       <div>
         <h1 class="title"> COLORSCAPE </h1>
+        <h2 class = "subtitle">created by Sam Herwig and Mary Yoder</h2>
         <div style={submitStyle}>
           <div class="wrapper">
             <form onSubmit={this.handleSubmit}>
