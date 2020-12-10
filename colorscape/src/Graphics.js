@@ -403,6 +403,10 @@ class Graphics extends React.Component {
         p.line(10, 100, 250, 300);
         p.pop();
       }
+      
+      else if(starSign == "Leo"){
+        {console.log(starSign)}
+      }
 
       else if (starSign == "Aquarius") {
         { console.log(starSign) }
