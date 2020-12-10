@@ -193,7 +193,8 @@ class Graphics extends React.Component {
         p.line(-10, -170, 190, 0); 
         p.line(190, 0, -165, 0); 
         p.line(190, 0, 70, 170); 
-        
+        p.line(-165, 0, -170, 280); 
+        p.line(-170, 280, -200, 320); 
 
         p.pop()
       
