@@ -96,27 +96,27 @@ class Graphics extends React.Component {
         p.translate(p.width / 2, p.height / 2);
         p.rotate(a / 3.0);
         a = a + b;
-        p.stroke(255); 
-        p.rect(-250, 100, 20, 20); 
+        p.stroke(255);
+        p.rect(-250, 100, 20, 20);
         p.rect(-150, 50, 20, 20);
-        p.line(-250, 100, -150, 50);  
+        p.line(-250, 100, -150, 50);
         p.rect(-200, 200, 20, 20);
-        p.line(-150, 50, -200, 200);  
+        p.line(-150, 50, -200, 200);
         p.rect(-100, 250, 20, 20);
-        p.line(-200, 200, -100, 250);  
-        p.rect(-10, 170, 20, 20); 
-        p.line(-100, 250, -10, 170); 
+        p.line(-200, 200, -100, 250);
+        p.rect(-10, 170, 20, 20);
+        p.line(-100, 250, -10, 170);
         p.rect(0, 0, 20, 20);
-        p.line(-10, 170, 0, 0);  
-        p.rect(100, -100, 20, 20);  
-        p.line(0, 0, 100, -100); 
+        p.line(-10, 170, 0, 0);
+        p.rect(100, -100, 20, 20);
+        p.line(0, 0, 100, -100);
         p.rect(250, -150, 20, 20);
-        p.line(100, -100, 250, -150); 
-        p.rect(220, -70, 20, 20); 
-        p.rect(180, -210, 20, 20); 
-        p.line(250, -150, 220, -70); 
-        p.line(250, -150, 180, -210);  
-        p.pop(); 
+        p.line(100, -100, 250, -150);
+        p.rect(220, -70, 20, 20);
+        p.rect(180, -210, 20, 20);
+        p.line(250, -150, 220, -70);
+        p.line(250, -150, 180, -210);
+        p.pop();
         // p.push();
         // p.translate(p.width / 2, p.height / 2);
         // p.scale(.55);
@@ -181,13 +181,13 @@ class Graphics extends React.Component {
         a = a + b;
         p.stroke(255);
         p.rect(-200, -150, 20, 20);
-        p.line(-200, -150,-60, -80);
+        p.line(-200, -150, -60, -80);
         p.rect(-60, -80, 20, 20);
 
-        p.line(-60, -80,0, 0);
+        p.line(-60, -80, 0, 0);
 
         p.rect(0, 0, 20, 20);
-        p.line(0, 0,20, 70);
+        p.line(0, 0, 20, 70);
         p.rect(20, 70, 20, 20);
         p.line(40, 70, 10, 130);
         p.rect(10, 130, 20, 20)
@@ -203,7 +203,23 @@ class Graphics extends React.Component {
 
       else if (starSign == "Libra") {
         { console.log(starSign) }
+        p.push();
         p.translate(p.width / 2, p.height / 2);
+        p.rotate(a / 3.0);
+        a = a + b;
+        p.stroke(255);
+        p.rect(-200, 320, 20, 20);
+        p.rect(-170, 280, 20, 20);
+        p.line(-200, 320, -170, 280); 
+        p.rect(-165, 0, 20, 20); 
+        p.line(-170, 280, -165, 0); 
+        p.rect(-10, -170, 20, 20); 
+        p.line(-165, 0, -10, -170)
+        p.line(-165, 0, 190, 0); 
+        p.line(-10, -170, 190, 0); 
+        p.rect(190, 0, 20, 20); 
+        p.rect(70, 170, 20, 20);
+        p.line(190, 0 , 70, 170);  
       }
 
       else if (starSign == "Gemini") {
@@ -254,18 +270,18 @@ class Graphics extends React.Component {
         p.line(-80, -200, 30, -40); //line
         p.rect(10, 10, 20, 20); //0
         p.line(10, 10, 40, 40); //line
-        p.rect(30, -40, 20,20); //1
+        p.rect(30, -40, 20, 20); //1
         p.line(10, 10, 40, 40); //line
         p.rect(40, 40, 20, 20); //0
         p.line(30, -40, 70, 10); //line
-        p.rect(70, 10, 20,20);  //1
+        p.rect(70, 10, 20, 20);  //1
         p.rect(90, 50, 20, 20);
         p.line(40, 40, 100, 60);
         p.line(70, 10, 90, 50);
         p.rect(150, 150, 20, 20);
         p.line(90, 50, 150, 150);
         p.rect(300, 250, 20, 20);
-        p.line(150, 150, 300,250);
+        p.line(150, 150, 300, 250);
         p.rect(280, 300, 20, 20);
         p.line(310, 250, 290, 300);
         p.pop();
