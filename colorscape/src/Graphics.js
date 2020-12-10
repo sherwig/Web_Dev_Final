@@ -92,9 +92,31 @@ class Graphics extends React.Component {
 
       if (this.props.starSign == "Scorpio") {
         { console.log(starSign) }
+        p.push()
         p.translate(p.width / 2, p.height / 2);
-        p.fill(0);
-        p.rect(x + 50, y + 50, 50, 50);
+        p.rotate(a / 3.0);
+        a = a + b;
+        // p.stroke(255); 
+        // p.rect(-250, 100, 20, 20); 
+        // p.rect(-150, 50, 20, 20);
+        // p.line(-250, 100, -150, 50);  
+        // p.rect(-200, 200, 20, 20);
+        // p.line(-150, 50, -200, 200);  
+        // p.rect(-100, 250, 20, 20);
+        // p.line(-200, 200, -100, 250);  
+        // p.rect(-10, 170, 20, 20); 
+        // p.line(-100, 250, -10, 170); 
+        // p.rect(0, 0, 20, 20);
+        // p.line(-10, 170, 0, 0);  
+        // p.rect(100, -100, 20, 20);  
+        // p.line(0, 0, 100, -100); 
+        // p.rect(250, -150, 20, 20);
+        // p.line(100, -100, 250, -150); 
+        // p.rect(220, -70, 20, 20); 
+        // p.rect(180, -210, 20, 20); 
+        // p.line(250, -150, 220, 170); 
+        // p.line(250, -150, 180, 210);  
+
       }
 
       else if (starSign == "Capricorn") {
