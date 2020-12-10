@@ -71,12 +71,6 @@ class Graphics extends React.Component {
 
       if (this.props.bgColor=="#ffffff")
       {
-          // {console.log(this.props.bgColor)}
-      }
-
-
-      if (this.props.bgColor=="#ffffff")
-      {
           p.stroke(0);
           p.fill(0);
       }
@@ -86,27 +80,11 @@ class Graphics extends React.Component {
         p.fill(255);
       }
 
-
-      // changer+=.01;
-
-      // p.strokeWeight(0);
-      // p.fill(255,127+p.sin(changer*255));
-      // {console.log(255*p.abs(p.sin(changer+255)))}
-
-      // p.ellipse(-100,-100,10);
-      // p.pop();
-
       p.push();
       p.translate(p.width / 2, p.height / 2);
-      // p.fill(255);
       p.rotate(a / 3.0);
       a = a + b
       p.pop();
-      // p.rect(0, 0, 50, 50);
-      // p.rect(x, y, 50, 50);
-
-
-
 
       if (this.props.starSign == "Scorpio") {
         { console.log(starSign) }
@@ -115,7 +93,6 @@ class Graphics extends React.Component {
         p.scale(.55);
         p.rotate(a / 3.0);
         a = a + b;
-        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(-400,100, 20, 20);
         p.line(-400,100,-450,80);
@@ -162,9 +139,6 @@ class Graphics extends React.Component {
 
       else if (starSign == "Capricorn") {
         { console.log(starSign) }
-        // p.rect(x + 50, y + 50, 50, 50);
-        // p.translate(p.width / 2, p.height / 2);
-
         p.push();
         p.translate(p.width / 2, p.height / 2);
         p.scale(1.55);
@@ -198,24 +172,6 @@ class Graphics extends React.Component {
         p.line(60,0,75,60);
         p.rect(30,-30, size, size);
         p.line(60,0,30,-30);
-
-
-
-        // p.rect(100, 50, 20, 20);
-        // p.line(-120, -70, 100, 50);
-        // p.rect(70, 120, 20, 20);
-        // p.line(110, 60, 80, 120);
-        // p.rect(170, 50, 20, 20);
-        // p.line(110, 60, 180, 50);
-        // p.rect(200, -50, 20, 20);
-        // p.line(180, 50, 200, -30);
-        // p.rect(300, -70, 20, 20);
-        // p.line(200, -30, 300, -55);
-        // p.rect(30, -270, 20, 20);
-        // p.rect(90, -150, 20, 20);
-        // p.line(30, -270, 90, -150);
-        // p.line(-40, -250, 30, -270);
-        // p.line(200, -50, 90, -150);
         p.pop();
 
 
@@ -242,12 +198,6 @@ class Graphics extends React.Component {
         p.line(40, 70, 10, 130);
         p.rect(10, 130, 20, 20)
         p.pop();
-
-        // p.rect(100, 150, 30, 30);
-        // p.rect(500, 80, 30, 30);
-        // p.rect(670, 500, 30, 30);
-        // p.rect(680, 590, 30, 30);
-        // p.rect(620, 660, 30, 30);
 
       }
 
@@ -311,14 +261,11 @@ class Graphics extends React.Component {
 
       else if (starSign == "Pisces") {
         { console.log(starSign) }
-        // p.translate(p.width / 2, p.height / 2);
-
         p.push();
         p.translate(p.width / 2, p.height / 2);
         p.scale(1.2);
         p.rotate(a / 3.0);
         a = a + b;
-        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(-150,300, size2, size2); //0
         p.line(-150,300, 100,260); //line
@@ -426,12 +373,10 @@ class Graphics extends React.Component {
 
       else if (starSign == "Aquarius") {
         { console.log(starSign) }
-        // p.translate(p.width / 2, p.height / 2);
       p.push();
       p.translate(p.width / 2, p.height / 2);
       p.rotate(a / 3.0);
       a = a + b;
-      // p.stroke(255);
       p.strokeWeight(1.8);
       p.rect(-200, 0, 20, 20);
       p.rect(-20, -80, 20, 20);
@@ -466,7 +411,6 @@ class Graphics extends React.Component {
         p.rotate(a / 3.0);
         p.scale(1.3);
         a = a + b;
-        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(250,250, 15, 15); //0
         p.line(250,250, 200,220); //line
@@ -483,15 +427,12 @@ class Graphics extends React.Component {
         p.line(100,90, -30, 40);
         p.rect(-30, 40, 15, 15);
         p.line(-30, 40, -40,-10);
-
         p.rect(-40,-10, 15, 15);
         p.line(-30, 40, 0, -40);
-
         p.rect(0, -40, 15, 15);
         p.line(0, -40, -20,-80);
         p.rect(-20,-80, 15, 15);
         p.line(0, -40, 105,50);
-
         p.rect(105,50, 15, 15);
         p.line(105,50, 140,55);
         p.rect(140,55, 15, 15);
@@ -500,7 +441,6 @@ class Graphics extends React.Component {
         p.line(190,0, 230,50);
         p.rect(230,50, 15, 15);
         p.line(230,50, 260,40);
-
         p.rect(260,40, 15, 15);
         p.line(260,40, 250,-40);
         p.rect(250,-40, 15, 15);
@@ -509,7 +449,6 @@ class Graphics extends React.Component {
         p.line(160,-60, 150,-30);
         p.rect(150,-30, 15, 15);
         p.line(150,-30, 190,0);
-
         p.pop();
 
 
@@ -521,7 +460,6 @@ class Graphics extends React.Component {
         p.translate(p.width / 2, p.height / 2);
         p.rotate(a / 3.0);
         a = a + b;
-        // p.stroke(255);
         p.strokeWeight(1.8);
         p.rect(0, -300, 20, 20);
         p.rect(20, 0, 20, 20);
@@ -537,15 +475,12 @@ class Graphics extends React.Component {
 
       else if (starSign == "Leo") {
         { console.log(starSign) }
-        // p.translate(p.width / 2, p.height / 2);
-
         p.push();
         p.translate(p.width / 2, p.height / 2);
         p.scale(1.3);
         p.strokeWeight(1.8);
         p.rotate(a / 3.0);
         a = a + b;
-        // p.stroke(255);
         p.rect(200,200, size, size); //0
         p.line(200,200, 160,220); //line
         p.rect(160,220, size, size); //1
@@ -566,8 +501,6 @@ class Graphics extends React.Component {
         p.rect(115,90, size, size);
 
         p.line(115,90, 80,130);
-        // p.rect(280, 300, 20, 20);
-        // p.line(310, 250, 290, 300);
         p.pop();
 
       }
