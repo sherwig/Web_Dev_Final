@@ -178,7 +178,25 @@ class Graphics extends React.Component {
 
       else if (starSign == "Libra") {
         { console.log(starSign) }
+        p.push();
         p.translate(p.width / 2, p.height / 2);
+        p.rotate(a / 3.0);
+        a = a + b;
+        p.stroke(255);
+        p.rect(-165, 0, 20, 20); 
+        p.rect(-10, -170, 20, 20); 
+        p.rect(190, 0, 20, 20); 
+        p.rect(70, 170, 20, 20); 
+        p.rect(-200, 320, 20, 20); 
+        p.rect(-170, 280, 20, 20); 
+        p.line(-165, 0, -10, -170);
+        p.line(-10, -170, 190, 0); 
+        p.line(190, 0, -165, 0); 
+        p.line(190, 0, 70, 170); 
+        
+
+        p.pop()
+      
       }
 
       else if (starSign == "Gemini") {
