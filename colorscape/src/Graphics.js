@@ -358,11 +358,6 @@ class Graphics extends React.Component {
         p.pop();
       }
 
-      else if (starSign == "Aquarius") {
-        { console.log(starSign) }
-        p.translate(p.width / 2, p.height / 2);
-      }
-
     }
   }
 
